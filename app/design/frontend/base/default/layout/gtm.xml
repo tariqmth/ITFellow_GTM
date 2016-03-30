@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<layout>
+	<default>
+		<reference name="after_body_start">
+			<block type="itfellow_gtm/trackingcode" name="gtm_code"
+				template="itfellow/gtm/trackingcode.phtml" />
+		</reference>
+		<reference name="before_body_end">
+			<block type="itfellow_gtm/remarketingtag" name="gtm_remarketingtag"
+				template="itfellow/gtm/remarketingtag.phtml" />
+		</reference>
+	</default>
+	<checkout_cart_index>
+		<reference name="gtm_remarketingtag">
+			<action method="setPageType">
+				<type>cart</type>
+			</action>
+		</reference>
+	</checkout_cart_index>
+	<checkout_onepage_success>
+		<reference name="after_body_start">
+			<block type="itfellow_gtm/transactionsdata" name="gtm_transactionsdata"
+				before="gtm_trackingcode" template="itfellow/gtm/transactionsdata.phtml" />
+		</reference>
+		<reference name="gtm_remarketingtag">
+			<action method="setPageType">
+				<type>purchase</type>
+			</action>
+		</reference>
+	</checkout_onepage_success>
+	<catalog_category_view>
+		<reference name="gtm_remarketingtag">
+			<action method="setPageType">
+				<type>category</type>
+			</action>
+		</reference>
+	</catalog_category_view>
+	<catalog_product_view>
+		<reference name="gtm_remarketingtag">
+			<action method="setPageType">
+				<type>product</type>
+			</action>
+		</reference>
+	</catalog_product_view>
+	<cms_index_index>
+		<reference name="gtm_remarketingtag">
+			<action method="setPageType">
+				<type>home</type>
+			</action>
+		</reference>
+	</cms_index_index>
+</layout>

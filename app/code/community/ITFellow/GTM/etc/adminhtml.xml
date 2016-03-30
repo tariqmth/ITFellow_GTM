@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <itfellow_gtm translate="title" module="itfellow_gtm">
+                                        <title>GTM</title>
+                                        <sort_order>100</sort_order>
+                                    </itfellow_gtm>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

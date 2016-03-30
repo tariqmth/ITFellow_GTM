@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <ITFellow_GTM>
+            <version>1.0.0</version>
+        </ITFellow_GTM>
+    </modules>
+    <global>
+        <blocks>
+            <itfellow_gtm>
+                <class>ITFellow_GTM_Block</class>
+            </itfellow_gtm>
+        </blocks>
+        <helpers>
+            <itfellow_gtm>
+                <class>ITFellow_GTM_Helper</class>
+            </itfellow_gtm>
+        </helpers>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <itfellow_gtm>
+                    <file>google_tag_manager.xml</file>
+                </itfellow_gtm>
+            </updates>
+        </layout>
+    </frontend>
+    <default>
+        <itfellow_gtm>
+            <itfellow_gtm_group>
+                <enable>0</enable>
+                <container_id></container_id>
+            </itfellow_gtm_group>
+            <itfellow_gtm_remarketing_group>
+                <enable_remarketing>0</enable_remarketing>
+            </itfellow_gtm_remarketing_group>
+            <itfellow_gtm_transaction_group>
+                <enable_transaction>1</enable_transaction>
+                <transaction_affiliation>My store</transaction_affiliation>
+            </itfellow_gtm_transaction_group>
+        </itfellow_gtm>
+    </default>
+</config>
