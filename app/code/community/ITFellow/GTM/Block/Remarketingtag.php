@@ -1,12 +1,12 @@
 <?php
-class ITFellow_GTM_Block_Remarketing extends Mage_Core_Block_Template
+class ITFellow_GTM_Block_Remarketingtag extends Mage_Core_Block_Template
 {
     /**
      * Return json data for remarketing
      *
      * @return bool|string
      */
-    public function getRemarketingData()
+    public function getRemarketingTagData()
     {
         $result = array(
             'event'             => 'fireRemarketingTag',

@@ -21,7 +21,7 @@
         <layout>
             <updates>
                 <itfellow_gtm>
-                    <file>google_tag_manager.xml</file>
+                    <file>gtm.xml</file>
                 </itfellow_gtm>
             </updates>
         </layout>

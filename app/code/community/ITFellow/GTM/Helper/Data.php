@@ -1,19 +1,20 @@
 <?php
 class ITFellow_GTM_Helper_Data extends Mage_Core_Helper_Abstract
 {
-    const XML_PATH_CONTAINER_ID = 'itfellow_gtm/itfellow_gtm_group/container_id';
-    const XML_PATH_ENABLE_REMARKETING = 'itfellow_gtm/itfellow_gtm_remarketing_group/enable_remarketing';
-    const XML_PATH_ENABLE_TRANSACTION = 'itfellow_gtm/itfellow_gtm_transaction_group/enable_transaction';
-    const XML_PATH_TRANSACTION_AFFILIATION = 'itfellow_gtm/itfellow_gtm_transaction_group/transaction_affiliation';
+	const GTM_ENABLED = 'itfellow_gtm/itfellow_gtm_group/enable';
+    const GTM_CONTAINER_ID = 'itfellow_gtm/itfellow_gtm_group/container_id';
+    const GTM_REMARKETING_TAG = 'itfellow_gtm/itfellow_gtm_remarketing_group/enable_remarketing';
+    const GTM_TRANSACTION_DATA = 'itfellow_gtm/itfellow_gtm_transaction_group/enable_transaction';
+    const GTM_TRANSACTION_AFFILIATION = 'itfellow_gtm/itfellow_gtm_transaction_group/transaction_affiliation';
 
     /**
      * Return module status
      *
      * @return mixed
      */
-    public function isActive()
+    public function isGTMActive()
     {
-        return Mage::getStoreConfig(self::XML_PATH_ENABLED);
+        return Mage::getStoreConfig(self::GTM_ENABLED);
     }
 
     /**
@@ -23,27 +24,27 @@ class ITFellow_GTM_Helper_Data extends Mage_Core_Helper_Abstract
      */
     public function getContainerId()
     {
-        return Mage::getStoreConfig(self::XML_PATH_CONTAINER_ID);
+        return Mage::getStoreConfig(self::GTM_CONTAINER_ID);
     }
 
     /**
-     * Return remarketing status
+     * Return status of remarketing tag
      *
      * @return mixed
      */
-    public function isActiveRemarketing()
+    public function isReMarketingTagActive()
     {
-        return Mage::getStoreConfig(self::XML_PATH_ENABLE_REMARKETING);
+        return Mage::getStoreConfig(self::GTM_REMARKETING_TAG);
     }
 
     /**
-     * Return transaction status
+     * Return status of transaction to Add transaction data to the data layer.
      *
      * @return mixed
      */
     public function isActiveTransaction()
     {
-        return Mage::getStoreConfig(self::XML_PATH_ENABLE_TRANSACTION);
+        return Mage::getStoreConfig(self::GTM_TRANSACTION_DATA);
     }
 
     /**
@@ -53,6 +54,6 @@ class ITFellow_GTM_Helper_Data extends Mage_Core_Helper_Abstract
      */
     public function getTransactionAffiliation()
     {
-        return Mage::getStoreConfig(self::XML_PATH_TRANSACTION_AFFILIATION);
+        return Mage::getStoreConfig(self::GTM_TRANSACTION_AFFILIATION);
     }
 }

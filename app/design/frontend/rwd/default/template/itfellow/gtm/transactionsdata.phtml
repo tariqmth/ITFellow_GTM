@@ -8,7 +8,7 @@
 ?>
 
 <?php
-$helper = Mage::helper('udevix_google_tag_manager');
+$helper = Mage::helper('itfellow_gtm');
 if ($helper->isActive() && $helper->isActiveTransaction()): ?>
     <script type="text/javascript">
         dataLayer = [<?php echo $this->getTransactionsData() ?>];
