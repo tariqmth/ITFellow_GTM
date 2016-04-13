@@ -20,9 +20,9 @@ class ITFellow_GTM_Block_Transactionsdata extends Mage_Checkout_Block_Success {
 	public function getTransactionsData() {
 		/**
 		 *
-		 * @var Udevix_GoogleTagManager_Helper_Data $helper
+		 * @var ITFellow_GTM_Helper_Data $helper
 		 */
-		$helper = Mage::helper ( 'udevix_google_tag_manager' );
+		$helper = Mage::helper ( 'itfellow_gtm' );
 		$data = array ();
 		
 		if ($this->lastOrderId) {
