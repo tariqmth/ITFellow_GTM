@@ -3,14 +3,22 @@
     "type": "magento-module",
     "description": "Extension for Magento to support google tag manager.",
     "license": "OSL - Open software license 3.0",
+    "homepage":"https://github.com/tariqmth/ITFellow_GTM/",
+  "require": {
+    "magento-hackathon/magento-composer-installer": "*"
+  }, 
+  "authors":[
+    {"name": "Tariq Hafeez"
+    }
+  ],
     "extra": {
         "branch-alias": {
             "dev-master": "1.0.x-dev"
         },
         "map": [
-            ["src/app/code/community/ITFellow/GTM", "app/code/community/ITFellow/GTM"],
-            ["src/app/design/frontend/base/default/template/itfellow/gtm", "app/design/frontend/base/default/template/itfellow/gtm"],
-            ["src/app/etc/modules/ITFellow_GTM.xml", "app/etc/modules/ITFellow_GTM.xml"],            
+            ["app/code/community/ITFellow/GTM", "app/code/community/ITFellow/GTM"],
+            ["app/design/frontend/base/default/template/itfellow/gtm", "app/design/frontend/base/default/template/itfellow/gtm"],
+            ["app/etc/modules/ITFellow_GTM.xml", "app/etc/modules/ITFellow_GTM.xml"],            
         ]
     }
 }
