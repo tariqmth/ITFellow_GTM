@@ -74,9 +74,7 @@ class ITFellow_GTM_Block_Transactionsdata extends Mage_Checkout_Block_Success {
 			);
 		}
 		
-		$data = json_encode ( $data );
-		Mage::log('transactional data lyer sending');
-		Mage::log($data);
+		$data = json_encode ( $data );		
 		return $data;
 	}
 }
