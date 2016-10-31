@@ -14,6 +14,9 @@
         "map": [
             ["app/code/community/ITFellow/GTM", "app/code/community/ITFellow/GTM"],
             ["app/design/frontend/base/default/template/itfellow/gtm", "app/design/frontend/base/default/template/itfellow/gtm"],
+            ["app/design/frontend/base/default/layout/gtm.xml", "app/design/frontend/base/default/layout/gtm.xml"],
+            ["app/design/frontend/rwd/default/template/itfellow/gtm", "app/design/frontend/base/default/template/itfellow/gtm"],
+            ["app/design/frontend/rwd/default/layout/gtm.xml", "app/design/frontend/base/default/layout/gtm.xml"],
             ["app/etc/modules/ITFellow_GTM.xml", "app/etc/modules/ITFellow_GTM.xml"]            
         ]
     }
