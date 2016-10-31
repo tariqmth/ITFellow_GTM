@@ -13,7 +13,7 @@
         "map": [
             ["app/code/community/ITFellow/GTM", "app/code/community/ITFellow/GTM"],
             ["app/design/frontend/base/default/template/itfellow/gtm", "app/design/frontend/base/default/template/itfellow/gtm"],
-            ["app/etc/modules/ITFellow_GTM.xml", "app/etc/modules/ITFellow_GTM.xml"],            
+            ["app/etc/modules/ITFellow_GTM.xml", "app/etc/modules/ITFellow_GTM.xml"]            
         ]
     }
 }
