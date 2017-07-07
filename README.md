@@ -4,13 +4,9 @@ The extension aims to integrate Google Tag Manager scripts to your Magento 1.7+ 
 
 Facts
 -----
-- version: 0.1.0
-- extension key: Company_ExampleExtension
-- [extension on Magento Connect](http://www.magentocommerce.com/magento-connect/company-exampleextension-1234.html)
-- Magento Connect 1.0 extension key: magento-community/Company_ExampleExtension
-- Magento Connect 2.0 extension key: http://connect20.magentocommerce.com/community/Company_ExampleExtension
-- [extension on GitHub](https://github.com/company/Company_ExampleExtension)
-- [direct download link](http://connect.magentocommerce.com/community/get/Company_ExampleExtension-0.1.0.tgz)
+- version: 1.1.0
+- extension key: ITFellow_GTM
+
 
 Description
 -----------
@@ -30,19 +26,33 @@ Compatibility
 
 Installation Instructions
 -------------------------
-1. Install the extension via Magento Connect with the key shown above or copy all the files into your document root.
-2. Clear the cache, logout from the admin panel and then login again.
-3. Configure and activate the extension under System - Configuration - ITFellow - Google Tag Manager.
-4. ...
+Method 1 - Install via composer [RECOMMENDED]
+1. To Install the extension via composer you must already using composer installer.
+2. Modify composer.json file and add the following in repositories section:
+   {
+      "type": "vcs",
+      "url": "https://github.com/tariqmth/ITFellow_GTM"
+    }
+3. Add the following in require section:
+	 "itfellow/gtm": "dev-master"
+
+Method 2 - Download extension
+1. Download extension from https://github.com/tariqmth/ITFellow_GTM/archive/master.zip
+2. Unzip and upload files to magento root i.e public_html
+
+ 	     
+- Clear the cache, if compilation enabled recompile.
+- Configure and activate the extension under System - Configuration - ITFellow - Google Tag Manager.
+
 
 Uninstallation
 --------------
 1. Remove all extension files from your Magento installation
-2. ...
+2. Remove all configuration entries from database table core_config
 
 Support
 -------
-If you have any issues with this extension, open an issue on [GitHub](https://github.com/company/Company_ExampleExtension/issues).
+If you have any issues with this extension, open an issue on [GitHub](https://github.com/tariqmth/ITFellow_GTM/issues).
 
 Contribution
 ------------
@@ -51,8 +61,7 @@ Any contribution is highly appreciated. The best way to contribute code is to op
 Developer
 ---------
 Tariq Hafeez  
-[http://www.firstname-lastname.com](http://www.firstname-lastname.com)  
-[@FirstNameLastName](https://twitter.com/FirstNameLastName)
+[@tariqmth(https://twitter.com/tariqmth)
 
 License
 -------
@@ -60,4 +69,4 @@ License
 
 Copyright
 ---------
-(c) 2016 ITFellow
+(c) 2017 ITFellow
